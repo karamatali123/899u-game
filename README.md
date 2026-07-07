@@ -48,6 +48,6 @@ After deploy, verify:
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `NEXT_PUBLIC_SITE_URL` | Yes (production) | Live site URL, e.g. `https://899u.com.pk` |
+| `NEXT_PUBLIC_SITE_URL` | Yes (production) | Live site URL, e.g. `https://899ugames.pk` |
 | `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | No | Google Search Console verification |
 | `NEXT_PUBLIC_BING_SITE_VERIFICATION` | No | Bing Webmaster verification |

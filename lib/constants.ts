@@ -1,5 +1,5 @@
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://899u.com.pk";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://899ugames.pk";
 
 export const APP_INFO = {
   appName: "899u",
@@ -11,7 +11,7 @@ export const APP_INFO = {
   withdrawalTime: "5–30 minutes (varies)",
   welcomeBonus: "Up to PKR 10,000 (promotional)",
   referralCommission: "Up to 12% agent commission",
-  officialWebsite: "899u.com",
+  officialWebsite: "899ugames.pk",
   paymentMethods: ["Easypaisa", "JazzCash", "Bank Transfer", "Crypto"],
 } as const;
 

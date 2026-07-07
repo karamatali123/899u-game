@@ -18,7 +18,7 @@ export default function FeaturesSection() {
           Before you download anything, it helps to know what the app actually
           offers day to day for real money players in Pakistan. 899u packs a full
           casino lobby, wallet tools, and promo events into one clean home screen.
-          Below are the features we noticed during our 899u.com.pk test on
+          Below are the features we noticed during our 899ugames.pk test on
           Android V2.1.0.
         </p>
 

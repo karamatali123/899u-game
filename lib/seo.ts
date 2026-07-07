@@ -39,6 +39,7 @@ export const SEO = {
     "earning game",
     "make money online",
     "899u game download",
+    "899ugames.pk",
   ],
   openGraph: {
     title: "899u Game Download APK Pakistan 2026 | Login, Bonus & Withdrawal Guide",
