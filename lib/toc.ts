@@ -1,0 +1,18 @@
+export const TABLE_OF_CONTENTS = [
+  { id: "overview", label: "Overview" },
+  { id: "why-choose-899u", label: "Why Choose 899u?" },
+  { id: "what-is-899u", label: "What is 899u or Tojay BET?" },
+  { id: "key-features", label: "Key Features of 899u Game Earning App" },
+  { id: "games-to-play", label: "Games to Play on 899u Game App" },
+  { id: "how-to-get-started", label: "How to Get Started on 899u Game App?" },
+  { id: "registration-login", label: "899u Registration and Login Process" },
+  { id: "download-install", label: "How to Download and Install 899u APK?" },
+  { id: "bonuses-promotions", label: "899u Bonuses and Promotions" },
+  { id: "become-899u-agent", label: "How to Become 899u Agent" },
+  { id: "payment-methods", label: "Payment Methods for Deposit and Withdrawals" },
+  { id: "safe-and-legal", label: "Is 899u Safe and Legal?" },
+  { id: "pros-and-cons", label: "Pros and Cons" },
+  { id: "experience-reviews", label: "Personal Experience and User Reviews" },
+  { id: "conclusion", label: "Conclusion" },
+  { id: "faqs", label: "FAQs" },
+] as const;
