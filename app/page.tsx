@@ -32,6 +32,10 @@ export const metadata: Metadata = {
   description: SEO.siteDescription,
   keywords: [...SEO.keywords],
   metadataBase: new URL(SITE_URL),
+  authors: [{ name: SEO.author, url: SITE_URL }],
+  creator: SEO.author,
+  publisher: SEO.publisher,
+  applicationName: SEO.siteName,
   alternates: {
     canonical: SEO.canonicalPath,
     languages: {
@@ -49,7 +53,16 @@ export const metadata: Metadata = {
     modifiedTime: SEO.modifiedDate,
     authors: [SEO.author],
     section: SEO.category,
-    tags: SEO.keywords.slice(0, 8),
+    tags: [
+      "899u",
+      "899u download",
+      "899u apk",
+      "899u login",
+      "899u register",
+      "899u pakistan",
+      "JazzCash",
+      "Easypaisa",
+    ],
     images: [
       {
         url: absoluteUrl(U899_IMAGES.promoBanner.src),

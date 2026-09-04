@@ -1,5 +1,5 @@
 import { faqs } from "@/components/FaqSection";
-import { APP_INFO, SITE_URL } from "@/lib/constants";
+import { APP_INFO, SITE_URL, SOCIAL_LINKS } from "@/lib/constants";
 import { U899_IMAGES } from "@/lib/899u-images";
 import { TABLE_OF_CONTENTS } from "@/lib/toc";
 import { absoluteUrl, SEO } from "@/lib/seo";
@@ -127,6 +127,7 @@ export default function SchemaMarkup() {
       width: U899_IMAGES.icon.width,
       height: U899_IMAGES.icon.height,
     },
+    sameAs: SOCIAL_LINKS.map((link) => link.href),
   };
 
   const breadcrumb = {

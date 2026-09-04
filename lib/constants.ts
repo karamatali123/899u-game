@@ -26,3 +26,21 @@ export const EXTERNAL_LINK_ATTRS = {
   target: "_blank",
   rel: "noopener noreferrer",
 } as const;
+
+export const SOCIAL_LINKS = [
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com/profile.php?id=61552763391684",
+    label: "Follow 899u on Facebook",
+  },
+  {
+    name: "WhatsApp",
+    href: "https://www.whatsapp.com/channel/0029Vb8o7sEK5cD6r1isZN3h",
+    label: "Join 899u WhatsApp channel",
+  },
+  {
+    name: "Telegram",
+    href: "https://telegram.me/VIP899Ubot",
+    label: "Contact 899u on Telegram",
+  },
+] as const;

@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { EXTERNAL_LINK_ATTRS, LOGIN_URL, REF_URL, SITE_URL } from "@/lib/constants";
+import {
+  EXTERNAL_LINK_ATTRS,
+  SITE_URL,
+  SOCIAL_LINKS,
+} from "@/lib/constants";
 import { U899_IMAGES } from "@/lib/899u-images";
 import { SEO } from "@/lib/seo";
 
@@ -21,11 +25,18 @@ const geistMono = Geist_Mono({
 const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 const bingVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
 
+const footerPages = [
+  { href: "/about", label: "About Us" },
+  { href: "/contact", label: "Contact Us" },
+  { href: "/terms", label: "Terms" },
+  { href: "/disclaimer", label: "Disclaimer" },
+] as const;
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: SEO.defaultLayoutTitle,
-    template: "%s | 899u Game Guide",
+    template: "%s | 899u",
   },
   description: SEO.defaultLayoutDescription,
   applicationName: SEO.siteName,
@@ -99,7 +110,7 @@ export default function RootLayout({
         </a>
         <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
           <nav
-            className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 sm:px-6"
+            className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 sm:px-6"
             aria-label="Main navigation"
           >
             <a
@@ -114,28 +125,26 @@ export default function RootLayout({
                 className="h-9 w-9 rounded-lg"
                 priority
               />
-              <span>899u Game Guide</span>
+              <span>899u</span>
             </a>
-            <div className="flex gap-4 text-sm font-medium">
-              <a
-                href={REF_URL}
-                {...EXTERNAL_LINK_ATTRS}
-                className="text-slate-600 hover:text-violet-700"
-              >
+            <div className="flex flex-wrap items-center justify-end gap-3 text-sm font-medium sm:gap-4">
+              <a href="/download" className="text-slate-600 hover:text-violet-700">
                 Download
               </a>
-              <a
-                href={LOGIN_URL}
-                {...EXTERNAL_LINK_ATTRS}
-                className="text-slate-600 hover:text-violet-700"
-              >
+              <a href="/login" className="text-slate-600 hover:text-violet-700">
                 Login
               </a>
               <a
-                href="/#faqs"
+                href="/register"
                 className="hidden text-slate-600 hover:text-violet-700 sm:inline"
               >
-                FAQ
+                Register
+              </a>
+              <a
+                href="/contact"
+                className="hidden text-slate-600 hover:text-violet-700 md:inline"
+              >
+                Contact
               </a>
             </div>
           </nav>
@@ -144,6 +153,36 @@ export default function RootLayout({
           {children}
         </main>
         <footer className="border-t border-slate-200 bg-slate-50 px-4 py-8 text-center text-sm text-slate-500 sm:px-6">
+          <nav
+            aria-label="Footer pages"
+            className="mb-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2"
+          >
+            {footerPages.map((page) => (
+              <a
+                key={page.href}
+                href={page.href}
+                className="font-medium text-slate-600 hover:text-violet-700"
+              >
+                {page.label}
+              </a>
+            ))}
+          </nav>
+          <nav
+            aria-label="Social links"
+            className="mb-4 flex flex-wrap items-center justify-center gap-4"
+          >
+            {SOCIAL_LINKS.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                {...EXTERNAL_LINK_ATTRS}
+                aria-label={link.label}
+                className="font-medium text-violet-700 hover:text-violet-900"
+              >
+                {link.name}
+              </a>
+            ))}
+          </nav>
           <p>
             &copy; {new Date().getFullYear()} {SEO.siteName}. For informational
             purposes only.

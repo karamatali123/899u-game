@@ -12,9 +12,9 @@ export default function OverviewSection() {
         <p className="mt-4 text-slate-700 leading-relaxed">
           899u is a popular new earning app in Pakistan that lets you play
           slots, casino tables, and arcade titles for real money online. In
-          short, it works like a lottery app and real money app rolled into one
+          short, 899u works like a lottery app and real money app rolled into one
           simple Android package you can download today. Because of that, many
-          players search for login and withdrawal help before they deposit even
+          players search for 899u login and withdrawal help before they deposit even
           a single rupee into their wallet.
         </p>
       </div>

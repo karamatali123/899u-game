@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { EXTERNAL_LINK_ATTRS, SOCIAL_LINKS } from "@/lib/constants";
 import { U899_IMAGES } from "@/lib/899u-images";
 
 export default function FeaturesSection() {
@@ -124,11 +125,25 @@ export default function FeaturesSection() {
           24/7 Fast Customer Support
         </h3>
         <p className="mt-3 text-slate-700 leading-relaxed">
-          Live chat and WhatsApp channels stay open around the clock for deposit
+          Live chat, WhatsApp, and Telegram stay open around the clock for deposit
           and withdrawal questions from Pakistani users. Response times were
           fastest after midnight when fewer tickets pile up in the queue. Keep your
           user ID ready — agents resolve most wallet issues faster with that number.
         </p>
+        <ul className="mt-4 flex flex-wrap gap-3">
+          {SOCIAL_LINKS.map((link) => (
+            <li key={link.name}>
+              <a
+                href={link.href}
+                {...EXTERNAL_LINK_ATTRS}
+                aria-label={link.label}
+                className="inline-flex min-h-[44px] items-center justify-center rounded-xl border border-violet-200 bg-violet-50 px-4 py-2 text-sm font-semibold text-violet-800 hover:bg-violet-100"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

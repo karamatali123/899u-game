@@ -1,7 +1,7 @@
 export const TABLE_OF_CONTENTS = [
   { id: "overview", label: "Overview" },
   { id: "why-choose-899u", label: "Why Choose 899u?" },
-  { id: "what-is-899u", label: "What is 899u or Tojay BET?" },
+  { id: "what-is-899u", label: "What is 899u?" },
   { id: "key-features", label: "Key Features of 899u Game Earning App" },
   { id: "games-to-play", label: "Games to Play on 899u Game App" },
   { id: "how-to-get-started", label: "How to Get Started on 899u Game App?" },

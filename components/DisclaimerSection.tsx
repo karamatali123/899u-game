@@ -14,7 +14,18 @@ export default function DisclaimerSection() {
           risk. All amounts mentioned in this article are in Pakistani Rupees
           (PKR). Never deposit more than you can comfortably afford to lose.
           Results on prediction platforms are not guaranteed. Please play
-          responsibly.
+          responsibly. Read the full{" "}
+          <a
+            href="/disclaimer"
+            className="font-medium text-violet-700 hover:underline"
+          >
+            Disclaimer
+          </a>{" "}
+          and{" "}
+          <a href="/terms" className="font-medium text-violet-700 hover:underline">
+            Terms and Conditions
+          </a>
+          .
         </p>
       </div>
     </section>
