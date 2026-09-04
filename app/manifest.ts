@@ -14,15 +14,15 @@ export default function manifest(): MetadataRoute.Manifest {
     lang: SEO.language,
     icons: [
       {
-        src: "/899uimages/icon.jpeg",
+        src: "/899uimages/icon.webp",
         sizes: "200x200",
-        type: "image/jpeg",
+        type: "image/webp",
         purpose: "any",
       },
       {
-        src: "/899uimages/icon.jpeg",
+        src: "/899uimages/icon.webp",
         sizes: "200x200",
-        type: "image/jpeg",
+        type: "image/webp",
         purpose: "maskable",
       },
     ],
